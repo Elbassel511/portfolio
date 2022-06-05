@@ -70,7 +70,7 @@ function Background() {
                     scale={() => [anime.random(0.6, 1), anime.random(0.6, 1), anime.random(0.6, 1)]}
                     translateX={() => [anime.random(windowWidth, -windowWidth), anime.random(windowWidth, -windowWidth), anime.random(windowWidth, -windowWidth)]}
                     translateY={() => [anime.random(windowHeight, -windowHeight), anime.random(windowHeight, -windowHeight), anime.random(windowHeight, -windowHeight)]}
-                    easing="easInOutQuad"
+                    easing="linear"
                     delay={() => anime.random(0, 10000)}
                     elasticity={() => anime.random(0, 1000)}
                     autoplay={true}

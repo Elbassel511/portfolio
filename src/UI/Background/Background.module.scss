@@ -2,7 +2,7 @@
 
 .background__element {
   //   background-color: $primary;
-  height: 5vw;
+  height: 10vh;
   aspect-ratio: 1;
   position: absolute;
   z-index: -5;
@@ -12,6 +12,7 @@
   top: 50%;
   left: 50%;
   overflow: hidden;
+  z-index: -10;
 }
 .icon {
   width: 100%;
@@ -19,7 +20,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: hsl(0, 1%, 15%);
+  color: hsl(0, 0%, 100%);
   z-index: -1;
   font-weight: bold;
 }

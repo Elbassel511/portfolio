@@ -6,15 +6,15 @@ import Projects from './pages/Projects';
 
 import Skills from './pages/Skills';
 
-import Background from './UI/Background/Background';
+// import Background from './UI/Background/Background';
 
 function App() {
 
   return (
     <>
-      <div className={classes.background} >
+      {/* <div className={classes.background} >
         <Background />
-      </div>
+      </div> */}
       <div className={classes.App}>
         <Navbar />
         <Routes>

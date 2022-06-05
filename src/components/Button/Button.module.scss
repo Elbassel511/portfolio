@@ -15,7 +15,7 @@
   position: relative;
   text-decoration: none !important;
   animation: slide-up 0.5s;
-
+  border: none;
   &:hover {
     background-color: $Dark-300;
     transform: scale(0.98);
