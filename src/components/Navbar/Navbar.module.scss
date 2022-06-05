@@ -1,0 +1,61 @@
+@import "../../assets/styles/variables";
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2em;
+  gap: 3rem;
+  height: 4em;
+  background-color: $Dark-500;
+  backdrop-filter: blur(82px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.listItem {
+  color: $Dark-300;
+  list-style: none;
+  margin: 0 1em;
+  text-decoration: none;
+  font-size: $fs-300;
+  position: relative;
+  &.active {
+    color: $Dark-100;
+    &::after {
+      transform: scale(1);
+    }
+  }
+
+  &:hover {
+    color: $Dark-200;
+  }
+
+  &::after {
+    content: "";
+    width: 0;
+    position: absolute;
+    width: 100%;
+    transform: scale(0);
+    height: 2px;
+    background-color: $Dark-100;
+    left: 0;
+    bottom: -1rem;
+    transition: all 0.5s;
+    transform-origin: center;
+  }
+  &:hover::after {
+    content: "";
+    transform: scale(1);
+  }
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1rem;
+  align-items: center;
+
+  & .logo {
+    color: $Dark-100;
+    font-size: $fs-200;
+    padding: 0 2em;
+  }
+}

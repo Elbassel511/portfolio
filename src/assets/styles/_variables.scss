@@ -1,0 +1,43 @@
+// break points
+$break-point: 370px;
+$break-point-m: 750px;
+
+//  ---------  //
+//   colors   //
+//  -------- //
+
+// Primary
+$primary: hsl(220, 98%, 61%);
+$secondary: hsl(220, 98%, 40%);
+$tertiary: hsl(220, 98%, 20%);
+$quaternary: hsl(220, 98%, 10%);
+
+// light theme
+
+$Light-100: hsl(0, 0%, 98%);
+$Light-200: hsl(236, 33%, 92%);
+$Light-300: hsl(233, 11%, 84%);
+$Light-400: hsl(236, 9%, 61%);
+$Light-500: hsl(235, 19%, 35%);
+$Light-600: hsl(236, 9%, 20%);
+
+// Dark Theme
+
+$Dark-100: hsl(236, 33%, 92%);
+$Dark-200: hsl(234, 39%, 85%);
+$Dark-300: hsl(234, 11%, 52%);
+$Dark-400: hsl(233, 14%, 35%);
+$Dark-500: hsl(237, 14%, 26%);
+
+// typography
+
+$font-primary: "Josefin Sans", sans-serif;
+
+$fs-100: 3rem;
+$fs-200: 1.8rem;
+$fs-300: 1.6rem;
+$fs-sm-100: 2.7rem;
+$fs-sm-200: 1.2rem;
+$fs-sm-300: 1rem;
+
+// custom

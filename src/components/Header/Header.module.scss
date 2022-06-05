@@ -1,0 +1,47 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/animation";
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eczar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
+.header {
+  color: transparent;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  background: linear-gradient(
+    215deg,
+    $Dark-300,
+    $Dark-100,
+    white,
+    silver,
+    $primary
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 500%;
+  -webkit-background-size: 500%;
+  animation: slide-up 0.5s, animate 15s ease alternate infinite;
+
+  & h1 {
+    font-size: 5rem;
+    text-align: center;
+    font-family: "Proza", sans-serif;
+  }
+  & h2 {
+    font-size: $fs-100;
+    text-align: center;
+    font-family: "Righteous", cursive;
+  }
+}
+@keyframes animate {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}

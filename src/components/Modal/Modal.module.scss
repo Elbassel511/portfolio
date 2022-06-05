@@ -1,0 +1,126 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/animation";
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  font-size: $fs-300;
+  max-height: 95vh;
+  top: 3vh;
+  left: 5%;
+  width: 90%;
+  background-color: $Light-300;
+  padding: 0;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 3000;
+  animation: slide-down 300ms ease-out forwards;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 90rem;
+    left: calc(50% - 45rem);
+  }
+}
+
+// @keyframes slide-down {
+//   from {
+//     opacity: 0;
+//     transform: translateY(-3rem);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
+
+.title {
+  font-size: $fs-300;
+  margin-bottom: 1rem;
+  text-align: center;
+  background-color: $Dark-400;
+  color: $Dark-100;
+  padding: 1rem 2rem;
+  margin: 0;
+  border-radius: 14px 14px 0 0;
+}
+.image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  max-height: 35rem;
+  overflow-y: scroll;
+  text-align: center;
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $Dark-400;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $Dark-100;
+  }
+  & img {
+    display: block;
+    margin: auto;
+  }
+}
+.description {
+  margin: 1rem;
+  border-radius: 14px;
+  font-size: $fs-300;
+  padding: 1rem 2rem;
+  text-align: center;
+  color: $Dark-500;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skillsTitle {
+  font-size: $fs-200;
+  display: inline-block;
+  text-align: center;
+  background-color: $Dark-400;
+  color: $Dark-100;
+  padding: 1rem 2rem;
+  border-radius: 14px;
+  margin: 0 auto;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  text-align: center;
+  justify-content: center;
+  gap: 2rem;
+
+  & a {
+    font-size: $fs-200;
+    color: $Dark-100;
+    text-decoration: none;
+    background-color: $Dark-400;
+    padding: 0.5rem 2rem;
+    border-radius: 14px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: $Dark-100;
+      color: $Dark-400;
+    }
+  }
+}
