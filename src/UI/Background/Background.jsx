@@ -53,8 +53,8 @@ function Background() {
             {skill.icon}
         </div >
     ));
-    const windowWidth = window.innerWidth / 5;
-    const windowHeight = window.innerHeight / 5;
+    const windowWidth = window.innerWidth / 7;
+    const windowHeight = window.innerHeight / 7;
 
 
 
@@ -65,12 +65,12 @@ function Background() {
                 <Anime
                     direction="alternate"
                     loop={true}
-                    opacity={() => anime.random(0.9, 1)}
+                    opacity={() => anime.random(0.7, 1)}
                     duration={30000}
-                    scale={() => [anime.random(1, 3), anime.random(1, 3), anime.random(1, 3)]}
+                    scale={() => [anime.random(0.6, 1), anime.random(0.6, 1), anime.random(0.6, 1)]}
                     translateX={() => [anime.random(windowWidth, -windowWidth), anime.random(windowWidth, -windowWidth), anime.random(windowWidth, -windowWidth)]}
                     translateY={() => [anime.random(windowHeight, -windowHeight), anime.random(windowHeight, -windowHeight), anime.random(windowHeight, -windowHeight)]}
-                    easing="linear"
+                    easing="easInOutQuad"
                     delay={() => anime.random(0, 10000)}
                     elasticity={() => anime.random(0, 1000)}
                     autoplay={true}
